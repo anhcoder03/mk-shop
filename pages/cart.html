@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="icon" href="/resource/image/mk-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/resource/css/header.css" />
+    <link rel="stylesheet" href="/resource/css/footer.css" />
+    <link rel="stylesheet" href="/resource/css/cart.css" />
+    <script
+      src="https://kit.fontawesome.com/5b900cdeed.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-wrapper">
+        <div class="nav navbar-small">
+          <ul class="nav nav-list">
+            <li class="nav--item">
+              <a href="/index.html">
+                <i class="fa-solid fa-house"></i>
+                Trang chủ
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-bell"></i>
+                Thông Báo
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="../pages/help_center.html">
+                <i class="fa-solid fa-address-book"></i>
+                Trung Tâm Trợ giúp
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping icon_cart"></i>
+                Giỏ Hàng
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-list">
+            <li class="nav--item">
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-earth-europe"></i>
+                Ngôn Ngữ
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="../pages/register.html">
+                <i class="fa-solid fa-user"></i>
+                Đăng Ký
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="main-cart">
+      <div class="main-cart-content">
+        <div class="bar-classification">
+          <div class="cf-checkbox">
+            <label for="select-all-products" class="cf_select-product">
+              <input
+                class="cf_stardust-checkbox__input"
+                type="checkbox"
+                id="select-all-products"
+              />
+              <div class="cf_stardust-checkbox__box"></div>
+            </label>
+          </div>
+          <div class="cf-product">Sản Phẩm</div>
+          <div class="cf-unit_price">Đơn giá</div>
+          <div class="cf-amount">Số Lượng</div>
+          <div class="cf-amount_money">Số Tiền</div>
+          <div class="cf-manipulation">Thao tác</div>
+        </div>
+        <div class="cart-product--list" id="cart-product"></div>
+        <div class="product-payment-container">
+          <div class="product-payment-wrapper">
+            <div class="payment-checkbox">
+              <label for="payment_select-all" class="cf_select-product">
+                <input
+                  class="cf_stardust-checkbox__input"
+                  type="checkbox"
+                  id="payment_select-all"
+                />
+                <div class="cf_stardust-checkbox__box"></div>
+              </label>
+            </div>
+            <div class="payment-select-all">Chọn Tất Cả</div>
+            <div>Tổng Thanh Toán</div>
+            <div id="total-payments" class="total-payment">đ<span>0</span></div>
+            <div class="btn btn-buy-product">Mua Hàng</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container-footer">
+        <div class="footer-list">
+          <div id="logo" class="col-lg-1">
+            <a href="#">
+              <img src="../resource/image/mk-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="footer_item">
+            <p class="_item-title">Về MK Shop</p>
+            <ul class="footer__list--content">
+              <li class="--content-item">
+                <a href="javascript:void(0)">Giới thiệu về MK Shop</a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">Tuyển dụng</a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">Điều khoản</a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">Chính sách bảo mật</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <p class="_item-title">Theo dõi chúng tôi trên</p>
+            <ul class="footer__list--content">
+              <li class="--content-item">
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>facebook</span>
+                </a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>instagram</span>
+                </a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>twitter</span>
+                </a>
+              </li>
+              <li class="--content-item">
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span>youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <p class="_item-title">Tải ứng dụng ngay thôi</p>
+            <div class="item-download">
+              <img
+                src="./resource/image/qr_code.png"
+                alt=""
+                class="item-download-qr"
+              />
+              <ul class="footer__list--download">
+                <li class="--content-item">
+                  <a href="javascript:void(0)" class="item_link-download">
+                    <img
+                      src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/39f189e19764dab688d3850742f13718.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="--content-item">
+                  <a href="javascript:void(0)" class="item_link-download">
+                    <img
+                      src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/f4f5426ce757aea491dce94201560583.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="--content-item">
+                  <a href="javascript:void(0)" class="item_link-download">
+                    <img
+                      src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/1ae215920a31f2fc75b00d4ee9ae8551.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/resource/js/main.js"></script>
+    <script src="/resource/js/cart.js"></script>
+  </body>
+</html>
