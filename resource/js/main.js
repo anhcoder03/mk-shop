@@ -338,10 +338,10 @@ function rederingImgProduct() {
             </div>
           </div>
           <div class="_product--cart_buy">
-            <button class="add--cart">
+            <a href="./cart".html class="add--cart">
               <i class="fa-solid fa-cart-plus"></i>
               <p>Thêm vào giỏ hàng</p>
-            </button>
+            </a>
           </div>
         </div>
       </div>
